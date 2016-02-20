@@ -4,8 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         // hashmap holding numbers 1-52 as keys and string name of card as value.
-        // generate a random number in range, and remove that entry from the hashmap,
-        // place in a "discard pile" hashmap and sout the value of the card.
+        // generate a random number in range and sout that card value.
+        // If I needed to do several cards in a row, I could remove each entry from the hashmap.
+        //To reshuffel the deck, I would run the generatedeck method again.
         HashMap<Integer, String>carddeck=generatedeck();
         Random num = new Random();
         int card = num.nextInt((carddeck.size()) + 1);
