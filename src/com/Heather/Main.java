@@ -12,7 +12,7 @@ public class Main {
         int card = num.nextInt((carddeck.size()) + 1);
         System.out.println("You have been dealt a(n)" + carddeck.get(card));
     }
-    private static HashMap<Integer, String> generatedeck(){
+    private static HashMap<Integer, String> generatedeck(){//creating a new deck of cards
         HashMap<Integer, String> carddeck=new HashMap();
         String[] suits={"Hearts","Spades","Diamonds","Clubs"};
         int count=0;
